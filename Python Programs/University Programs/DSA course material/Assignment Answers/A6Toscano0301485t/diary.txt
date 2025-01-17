@@ -1,0 +1,52 @@
+12th November
+Keeping the approach similar to the question
+Youtube video referenced
+https://www.youtube.com/watch?v=HqPJF2L5h9U
+https://www.youtube.com/watch?v=cuL8gXCSA58
+Sudo code was in the video got a reference but did not use it while coding my program.
+Slides
+
+First implementing openFile which will open a file, read numbers from the file and insert them into a list.
+- Opening a file
+- Create a list to add values from file to
+- Return list
+- Add error handling
+- Add a loop to keep asking if error is caught.
+
+13th November
+For heapify
+Checking for condition if each individual element is a heap and the largest element is the parent
+Start from the last element
+Check if the left or right node is greater and swap accordingly.
+Also have to check before hand if the left and right node exist
+
+Parent node will be set to last element set to moved element and keep checking
+No swaps then decrementing index
+
+Fixing minor errors
+Testing the code
+
+Implementing a display function for display the heap list
+
+Copy pasting part of the heapify function into the pushdown function
+
+Implementing getmax
+Will check if list is empty else will return the first element
+
+Implementing removemax
+Will check for empty list. Pop the first element and call pushdown
+
+14th November
+Testing all cases
+Found errors in push down.
+Adding a while loop in push down
+
+Forgot to add the last element of the list to the top of the list in the removemax function.
+
+Implementing bubble up
+Create loop that will run till it reaches the root.
+Setting parent root to index - 1 // 2
+Compare the node to the parent node repeat till no swaps were made
+If no swaps break
+
+

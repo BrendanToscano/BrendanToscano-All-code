@@ -1,0 +1,42 @@
+https://www.youtube.com/watch?v=mufu0FDOMys
+https://www.geeksforgeeks.org/skip-list/
+https://www.geeksforgeeks.org/skip-list-set-2-insertion/
+https://www.geeksforgeeks.org/skip-list-set-3-searching-deletion/
+I got a rough idea of the code from the above sources.
+Each node in the linked list will have a list of None values that will be filled with similar nodes. Basically from what I understand in add element we insert a list inside the list. The list will contain the pointer to the next node on that level. The level will be the index.
+Using this to setup the basic concept of the skip list.
+I referenced the code from geeksforgeeks but did all of it myself after figuring out how everything works.
+
+First we create the node class and in the class we store the value and the next pointer which will be [none] * level (explanation on top)
+
+We then create the skip list class.
+The skip list class will have a max level of 10 set as default or user specified value.
+We set the head node and we start a counter for the number of levels.
+
+We create the coin flip function that gets a random int 1 or 2. If the int is 1 then it will count it. Once 2 is received it will end count.
+
+We then create a function that will add elements to the list. This list will be the list we store instead the first list (explanation on top).
+We then go from the highest level to the lowest decrementing the numoflevels.
+Inside we create another loop to traverse through the nodes at the level.
+We then add the node to the list.
+
+Reset the pointer to the lowest level
+
+Now we can check if that node is empty or the value don’t match.
+We can then get the count from the coin flip function.
+
+We can now check if the count is greater than the the num of levels also we can set alll null pointers to point to the head.
+
+Finally we insert the nodes.
+
+In coinflip function we need to add a stop to make sure it doesn’t exceed maxlevel
+
+We copy paste the same addtolist code to the delete function. 
+We can skip if the node is not found
+
+If found we can remove that node from all levels.
+Once each level is removed we can decrement the level.
+
+Implementing this 
+
+Fixing the code and debugging 

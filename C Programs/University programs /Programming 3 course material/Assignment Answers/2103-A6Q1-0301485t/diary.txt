@@ -1,0 +1,60 @@
+Reference/sources 
+Finding out about string.h learning about strcmp
+rewind(file); To move pointer to the start.
+How to remove newline after fgets google
+Finding out about strcspn google
+Slides and previous assignments
+
+Starting with the main Adding error checking to make sure only 2 arguments in the command line 
+Also opening file with error checking 
+Adding all function calls and closing file 
+
+Creating a new function wordCount
+Preplan: - open the file and read till the end. Check for space and set a counter increment count every time . Also implementing a preacher incase we have 2 spaces and so on. Won’t work for last word though so also adding a check outside the loop to increment.
+
+Initiate count = 0, c and prevc
+Open the file read till the end 
+If space and prev char was a alpha numeric then increment count
+Set prev to current char and continue 
+Also add the check or the last element that doesn’t get counted.
+Then print the count out 
+
+Implementing in the same way above
+
+Planning charter Frequency 
+Create 2 lists
+Second read the the file with while loop
+If char not in list then add 
+Else 
+Find the char then increment count of char then also increment the count of same index as char.
+Print list1[I] and list2[I] where list 1 is the char and list2 is the count of the c 
+Initializing everything to -1111
+And count to 0
+Printing it out 
+Free the array memory
+
+Create 2 string using malloc one for substring one to the normal list letting it be 1000 in length 
+Ask user for substring with max limit of 1000chars.
+
+Open and read till end of the file 
+Check if the first char o the substring is the same as the char 
+Then add to list also create end position
+Over here compare the newly created list to the sub string and if it is true then increase count (also create count and index variable)
+Else reset index to start over 
+Then deallocate memory
+
+Create an array ill take 150 length of a word. 
+Else case Add the char to the word and increase index.
+Copy pasting the code from the first function deleting the count and adding a for loop to count the chars to setting the list backwards.
+
+Also implementing a similar implentation as above outside loop for the last value problem like above.
+
+Deallocate memory
+
+For palindrom copy pasting above code 
+Creating another array for the revword. Same implementation.
+Comparing the 2 words if they match print out 
+
+Deallocate memory of second array as well.
+
+Debugging and testing. Added the rewind(file) part to all functions also making sure new line when getting user input isn't a problem.

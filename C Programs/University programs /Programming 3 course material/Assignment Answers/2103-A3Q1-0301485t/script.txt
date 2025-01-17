@@ -1,0 +1,95 @@
+Script started on Thu Oct 19 22:02:56 2023
+Restored session: Thu Oct 19 22:02:26 ADT 2023
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Brendans-MacBook-Pro.local/Users/brendan/Desktop/cprograms/2103-A3Q1-0301485t[0m[27m[24m[Jbrendan@Brendans-MacBook-Pro 2103-A3Q1-0301485t % [K[?2004hmmake clean[?2004l
+rm mathTestingProgram
+rm: mathTestingProgram: No such file or directory
+make: *** [clean] Error 1
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Brendans-MacBook-Pro.local/Users/brendan/Desktop/cprograms/2103-A3Q1-0301485t[0m[27m[24m[Jbrendan@Brendans-MacBook-Pro 2103-A3Q1-0301485t % [K[?2004hlls -l[?2004l
+total 32
+-rw-r--r--  1 brendan  staff   218 Oct 19 21:04 Makefile
+-rw-r--r--@ 1 brendan  staff  5400 Oct 19 21:56 mathTestingProgram.c
+-rw-r--r--  1 brendan  staff    43 Oct 19 22:02 script.txt
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Brendans-MacBook-Pro.local/Users/brendan/Desktop/cprograms/2103-A3Q1-0301485t[0m[27m[24m[Jbrendan@Brendans-MacBook-Pro 2103-A3Q1-0301485t % [K[?2004hccat makefile[?2004l
+CC = gcc
+CFLAGS = -Wall -Wextra -pedantic
+TARGET = mathTestingProgram
+
+all: $(TARGET)
+
+debug: CFLAGS += -DDEBUG
+debug: $(TARGET)
+
+$(TARGET): $(TARGET).c
+	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).c
+
+clean:
+	rm $(TARGET)
+
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Brendans-MacBook-Pro.local/Users/brendan/Desktop/cprograms/2103-A3Q1-0301485t[0m[27m[24m[Jbrendan@Brendans-MacBook-Pro 2103-A3Q1-0301485t % [K[?2004hmmake[?2004l
+gcc -Wall -Wextra -pedantic -o mathTestingProgram mathTestingProgram.c
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Brendans-MacBook-Pro.local/Users/brendan/Desktop/cprograms/2103-A3Q1-0301485t[0m[27m[24m[Jbrendan@Brendans-MacBook-Pro 2103-A3Q1-0301485t % [K[?2004hlls -l[?2004l
+total 104
+-rw-r--r--  1 brendan  staff    218 Oct 19 21:04 Makefile
+-rwxr-xr-x  1 brendan  staff  33839 Oct 19 22:03 mathTestingProgram
+-rw-r--r--@ 1 brendan  staff   5400 Oct 19 21:56 mathTestingProgram.c
+-rw-r--r--  1 brendan  staff     43 Oct 19 22:02 script.txt
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Brendans-MacBook-Pro.local/Users/brendan/Desktop/cprograms/2103-A3Q1-0301485t[0m[27m[24m[Jbrendan@Brendans-MacBook-Pro 2103-A3Q1-0301485t % [K[?2004h/ ../mathTestingProgram[?2004l
+Two numbers have been divided enter your guess of the total(Enter a decimal number of 2 digits)
+7 / 7
+1
+Correct
+Two number have been added enter your guess of the total
+11 + 5
+16
+Correct
+Two number have been multiplied enter your guess of the total
+8 x 2
+16
+Correct
+Two number have been multiplied enter your guess of the total
+1 x 7
+7
+Correct
+Two numbers have been divided enter your guess of the total(Enter a decimal number of 2 digits)
+5 / 1
+0 0
+Incorrect
+Answer is 5.000000
+Two numbers have been divided enter your guess of the total(Enter a decimal number of 2 digits)
+11 / 10
+0
+Incorrect
+Answer is 1.100000
+Two number have been subtracted enter your guess of the total
+7 - 0
+5
+Incorrect
+Answer is 7
+Two number have been added enter your guess of the total
+5 + 10
+15
+Correct
+Two number have been multiplied enter your guess of the total
+1 x 2
+2
+Correct
+Two number have been added enter your guess of the total
+2 + 6
+8
+Correct
+Two number have been added enter your guess of the total
+3 + 4
+7
+Correct
+Two number have been subtracted enter your guess of the total
+8 - 8
+-1111
+You got 8 answers correct
+You got 3 answers wrong
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Brendans-MacBook-Pro.local/Users/brendan/Desktop/cprograms/2103-A3Q1-0301485t[0m[27m[24m[Jbrendan@Brendans-MacBook-Pro 2103-A3Q1-0301485t % [K[?2004heexit[?2004l
+
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Thu Oct 19 22:04:10 2023

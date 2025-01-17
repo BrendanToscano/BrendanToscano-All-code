@@ -1,0 +1,65 @@
+For this I will be referring to the code in my data structures class and the slides.
+
+Creating the print functions first for testing later 
+In print function we will first check if the list is empty.
+Then we will create a for loop similar to those in slides from start to end. We can use count variable to count and make count match total.
+Print each node then.
+
+Copy pasting the above function and using it in the second node
+Changing the first node to last node and instead of ->next we use ->prev
+
+Using the same code in the slides as a starting point
+Adding a prev pointer to node
+
+Copying the addNode from the slides 
+Converting the linked list to circular linked list here .
+In the first part when we check if the list is empty we change the pointer from pointing to the null to pointing to itself because there is only one node and it is a CDDL.
+In the else point adding the prev pointer. Referring to my java code from data structures for this part.
+Spend some time on this part.
+Ended up removing this ->first = node and replacing node->next = this ->first with node->prev = this->first->prev 
+
+Testing everything fixing minor issues
+
+Adding the add part from the slides. Adding a count variable that will keep counting every time the loop runs it will stop till it matches the user position.
+
+Adding a total variable outside every function to use every time something is added to check if in range
+
+Added a check to see if position is at the start of the list and another for at the end.
+If at the start we just call add node function
+If at the end we first get the last node then we add the value to the node, we make the new node point to the first node, the first node point to the new node, the node point to the previous last node, 
+
+We change the else part to meet the requirements of a circular doubly linked list as well
+We make the new added node point to what the old node was point to, we make the old node point to the new node, we make the 
+
+Testing everything and debugging (changed some statements here)
+
+Renaming the add node to add node to start and creating a new add node function. 
+Checking if add node first element is null and calling the add node to start function else
+Adding a node to the end copying pasting the stuff we did above to add node. In the add node position function replacing the position == value part with add node function.
+
+Testing and fixing minor errors
+
+Creating the deleteNode function 
+First we add a check to see if the list is empty 
+
+Testing and fixing minor errors
+
+Then we can create a for loop similar to the one in slides except we modify the condition to check if the value of the current node matches the value specified by the user. Also since it is a CCDL we have to break out of it so we can use a counter and we can check if the count is more than the total.
+We then assign the previous nodes next pointer to the next nodes pointer and the next nodes previous pointer to the previous node.
+We also add a check to reassign the head node value if the value deleted was the first node.
+Later I added a check to check to see if there is only 1 node in the CCDL then we can reassign the head node to NULL and delete the current node.
+We decrement total once everything is done.
+
+Testing and fixing minor error
+
+We copy paste this function and name it delete node position.
+We can add a check for the position to check if in range
+In the for loop we can change the condition to check if count is smaller than total.
+In the loop we can change the if statement to check if count reached position.
+
+Putting the total in the typedef struct so we can create multiple linked list. Changing total to this->total everywhere.
+
+Testing and debugging.
+
+Changing the stuff in main to make a menu.
+

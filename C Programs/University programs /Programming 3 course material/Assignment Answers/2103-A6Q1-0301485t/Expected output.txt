@@ -1,0 +1,97 @@
+brendan@Brendans-MacBook-Pro 2103-A6Q1-0301485t % make
+gcc -Wall -Wextra -pedantic -o textAnalysis textAnalysis.c
+brendan@Brendans-MacBook-Pro 2103-A6Q1-0301485t % ./textAnalysis test1.txt
+Word count of the file is 38
+The character 'j' has a count of 14
+The character 'e' has a count of 28
+The character ' ' has a count of 37
+The character 's' has a count of 9
+The character 'n' has a count of 1
+The character 'b' has a count of 2
+The character 'o' has a count of 10
+The character 'h' has a count of 2
+The character 'i' has a count of 8
+The character 'f' has a count of 16
+The character 'p' has a count of 18
+The character 'a' has a count of 19
+The character 'r' has a count of 1
+The character 'd' has a count of 3
+The character 'x' has a count of 1
+Enter the substring you want to find (999 character limit): Je se
+The substring 'Je se' has apperead 0 in the file
+ej e esnes se bob hoiioh fpjsefisf e feif e s sjp sp o jipse jfipe jpae ife ea oip jofpe jepra jeaofpd dap pe af jaepe jpea aaa jeajpf jopa pef eef oea aaf peafo daf xea 
+e is a palindromic word
+bob is a palindromic word
+hoiioh is a palindromic word
+e is a palindromic word
+e is a palindromic word
+s is a palindromic word
+o is a palindromic word
+aaa is a palindromic word
+brendan@Brendans-MacBook-Pro 2103-A6Q1-0301485t % ./textAnalysis test2.txt
+Word count of the file is 21
+The character 'h' has a count of 8
+The character 'e' has a count of 9
+The character 'l' has a count of 4
+The character 'o' has a count of 7
+The character ' ' has a count of 21
+The character 'w' has a count of 2
+The character 'r' has a count of 5
+The character 'd' has a count of 4
+The character 'b' has a count of 2
+The character 'i' has a count of 10
+The character 's' has a count of 4
+The character 'a' has a count of 5
+The character 'p' has a count of 4
+The character 'y' has a count of 2
+The character 'f' has a count of 1
+The character 't' has a count of 7
+The character 'n' has a count of 4
+The character 'g' has a count of 5
+The character 'u' has a count of 1
+The character 'k' has a count of 2
+The character 'm' has a count of 2
+The character 'c' has a count of 1
+The character 'v' has a count of 2
+The character '.' has a count of 1
+Enter the substring you want to find (999 character limit): hello world
+The substring 'hello world' has apperead 0 in the file
+olleh dlrow bob si yppah gnitaolf hgih pu ni eht eyks sih mom tog a gnideeps tekcit htiw eht radar gniod .reviver 
+bob is a palindromic word
+mom is a palindromic word
+a is a palindromic word
+radar is a palindromic word
+brendan@Brendans-MacBook-Pro 2103-A6Q1-0301485t % ./textAnalysis test2.txt
+Word count of the file is 21
+The character 'h' has a count of 8
+The character 'e' has a count of 9
+The character 'l' has a count of 4
+The character 'o' has a count of 7
+The character ' ' has a count of 21
+The character 'w' has a count of 2
+The character 'r' has a count of 5
+The character 'd' has a count of 4
+The character 'b' has a count of 2
+The character 'i' has a count of 10
+The character 's' has a count of 4
+The character 'a' has a count of 5
+The character 'p' has a count of 4
+The character 'y' has a count of 2
+The character 'f' has a count of 1
+The character 't' has a count of 7
+The character 'n' has a count of 4
+The character 'g' has a count of 5
+The character 'u' has a count of 1
+The character 'k' has a count of 2
+The character 'm' has a count of 2
+The character 'c' has a count of 1
+The character 'v' has a count of 2
+The character '.' has a count of 1
+Enter the substring you want to find (999 character limit): Hello world
+The substring 'Hello world' has apperead 1 in the file
+olleh dlrow bob si yppah gnitaolf hgih pu ni eht eyks sih mom tog a gnideeps tekcit htiw eht radar gniod .reviver 
+bob is a palindromic word
+mom is a palindromic word
+a is a palindromic word
+radar is a palindromic word
+brendan@Brendans-MacBook-Pro 2103-A6Q1-0301485t % 

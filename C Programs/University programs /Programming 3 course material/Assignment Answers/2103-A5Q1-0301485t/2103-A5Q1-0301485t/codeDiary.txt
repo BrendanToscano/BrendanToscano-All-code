@@ -1,0 +1,58 @@
+Started code on 12th November
+Creating the program base.
+Starting with the arrayCreation function to dynamically allocation memory 
+In function creating an asking user for the size of the array.Implementing error checking to check if user input is a number. If not exiting with failure.
+Implementing the dynamically allocated memory using malloc. 
+Source: Referenced slides 
+
+Moving the array size part to the main program.
+
+In the arrayCreation function including arraySize as a parameter.
+
+In arrayPopulate function starting with a parameter arraySize
+Creating a for loop to run only for the arraSize number of times.
+Asking user to enter int. Error checking implemented.
+Adding another parameter to arraySize to take in array 
+Then appending the int to the array.
+Changing the return to void instead of int.
+
+
+Copy pasting first 2 lines of above function and printing each element using index of the array.
+
+Calling the array creation function 
+Calling the array populate and display functions 
+Testing and debugging 
+
+Creating all operation functions
+
+Starting with maxVal
+Creating a maxval 
+Using a for loop like the ones above and checking if maxval less than every element in the array. Changing maxval till the greatest num is found in the list. Then returning Mac val
+
+Similar implementation for min val except changing signs
+
+For sum again using the same for loop and adding to a total value.
+
+For avg calling sum and diving by size
+
+Debugging line by line.
+Forgot to not do indexing and pointer arithmetic and manipulation instead. Implementing that now.
+
+12th novem 5:02
+In the question the first part we are asked to ask the user for integers as input and in the main program part we were asked to generate random numbers. So I decided to implement both but only use the random one for convince.
+Also since the question never mentioned what range to generate from I decided to go with -50 to 49
+Referring to previous assignments for the srand(time(NULL));
+Include time.h
+
+12th November 5:13
+Debugging
+
+5:27
+Create a function to deallocate memory
+Deallotacating memory using free
+
+6:10
+Forgot to implement reverse array using pointers
+Referring slides and watching a video about memmove
+Creating a new reverse array and moving the array element in reverse order to the reverse array and displaying it.
+Assigning new array to old array and then deallocating it 

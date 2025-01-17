@@ -1,0 +1,138 @@
+Script started on Fri Oct 20 01:01:24 2023
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Brendans-MacBook-Pro.local/Users/brendan/Desktop/cprograms/2103-A3Q2-0301485t[0m[27m[24m[Jbrendan@Brendans-MacBook-Pro 2103-A3Q2-0301485t % [K[?2004hmmake ce lean[?2004l
+rm mathTestingProgram
+rm: mathTestingProgram: No such file or directory
+make: *** [clean] Error 1
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Brendans-MacBook-Pro.local/Users/brendan/Desktop/cprograms/2103-A3Q2-0301485t[0m[27m[24m[Jbrendan@Brendans-MacBook-Pro 2103-A3Q2-0301485t % [K[?2004hlls -l[?2004l
+total 32
+-rw-r--r--  1 brendan  staff   218 Oct 19 21:04 Makefile
+-rw-r--r--@ 1 brendan  staff  7492 Oct 20 01:00 mathTestingProgram.c
+-rw-r--r--  1 brendan  staff    43 Oct 20 01:01 script.txt
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Brendans-MacBook-Pro.local/Users/brendan/Desktop/cprograms/2103-A3Q2-0301485t[0m[27m[24m[Jbrendan@Brendans-MacBook-Pro 2103-A3Q2-0301485t % [K[?2004hccat makefile[?2004l
+CC = gcc
+CFLAGS = -Wall -Wextra -pedantic
+TARGET = mathTestingProgram
+
+all: $(TARGET)
+
+debug: CFLAGS += -DDEBUG
+debug: $(TARGET)
+
+$(TARGET): $(TARGET).c
+	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).c
+
+clean:
+	rm $(TARGET)
+
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Brendans-MacBook-Pro.local/Users/brendan/Desktop/cprograms/2103-A3Q2-0301485t[0m[27m[24m[Jbrendan@Brendans-MacBook-Pro 2103-A3Q2-0301485t % [K[?2004hmmake debug[?2004l
+gcc -Wall -Wextra -pedantic -DDEBUG -o mathTestingProgram mathTestingProgram.c
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Brendans-MacBook-Pro.local/Users/brendan/Desktop/cprograms/2103-A3Q2-0301485t[0m[27m[24m[Jbrendan@Brendans-MacBook-Pro 2103-A3Q2-0301485t % [K[?2004hlls -l[?2004l
+total 104
+-rw-r--r--  1 brendan  staff    218 Oct 19 21:04 Makefile
+-rwxr-xr-x  1 brendan  staff  34079 Oct 20 01:02 mathTestingProgram
+-rw-r--r--@ 1 brendan  staff   7492 Oct 20 01:00 mathTestingProgram.c
+-rw-r--r--  1 brendan  staff   1203 Oct 20 01:01 script.txt
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Brendans-MacBook-Pro.local/Users/brendan/Desktop/cprograms/2103-A3Q2-0301485t[0m[27m[24m[Jbrendan@Brendans-MacBook-Pro 2103-A3Q2-0301485t % [K[?2004h../mathTestingProblem    gram[?2004l
+Two number have been multiplied enter your guess of the total
+8 x 8
+0
+Incorrect
+Answer is 64
+Two numbers have been divided enter your guess of the total(Enter a decimal number of 2 digits)
+9 / 1
+0
+Incorrect
+Answer is 9.000000
+Two numbers have been divided enter your guess of the total(Enter a decimal number of 2 digits)
+3 / 3
+1
+Correct
+Two numbers have been divided enter your guess of the total(Enter a decimal number of 2 digits)
+11 / 2
+5.5
+Correct
+Two number have been subtracted enter your guess of the total
+11 - 5
+6
+Correct
+Two number have been subtracted enter your guess of the total
+8 - 1
+7
+Correct
+Two number have been multiplied enter your guess of the total
+9 x 9
+0
+Incorrect
+Answer is 81
+Two numbers have been divided enter your guess of the total(Enter a decimal number of 2 digits)
+2 / 2
+0
+Incorrect
+Answer is 1.000000
+Two number have been added enter your guess of the total
+4 + 1
+5
+Correct
+Two number have been added enter your guess of the total
+5 + 10
+15
+Correct
+Two numbers have been divided enter your guess of the total(Enter a decimal number of 2 digits)
+4 / 2
+0
+Incorrect
+Answer is 2.000000
+Two number have been subtracted enter your guess of the total
+1 - 2
+7
+Incorrect
+Answer is -1
+Two number have been subtracted enter your guess of the total
+11 - 5
+8
+Incorrect
+Answer is 6
+Two number have been subtracted enter your guess of the total
+7 - 8
+-1
+Correct
+Two number have been multiplied enter your guess of the total
+6 x 3
+18
+Correct
+Two number have been multiplied enter your guess of the total
+0 x 10
+0
+Correct
+Two number have been added enter your guess of the total
+9 + 0
+-1111
+You got 9 answers correct
+You got 7 answers wrong
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Brendans-MacBook-Pro.local/Users/brendan/Desktop/cprograms/2103-A3Q2-0301485t[0m[27m[24m[Jbrendan@Brendans-MacBook-Pro 2103-A3Q2-0301485t % [K[?2004hccat log.txt[?2004l
+Incorrect - (8 * 8) = 64 - Entered: 0
+Incorrect - (9/1) = 9.00 - Entered: 0.00
+Correct - (3/3) = 1.00 - Entered: 1.00
+Correct - (11/2) = 5.50 - Entered: 5.50
+Correct - (11 - 5) = 6 - Entered: 6
+Correct - (8 - 1) = 7 - Entered: 7
+Incorrect - (9 * 9) = 81 - Entered: 0
+Incorrect - (2/2) = 1.00 - Entered: 0.00
+Correct - (4 + 1) = 5 - Entered: 5
+Correct - (5 + 10) = 15 - Entered: 15
+Incorrect - (4/2) = 2.00 - Entered: 0.00
+Incorrect - (1 - 2) = -1 - Entered: 7
+Incorrect - (11 - 5) = 6 - Entered: 8
+Correct - (7 - 8) = -1 - Entered: -1
+Correct - (6 * 3) = 18 - Entered: 18
+Correct - (0 * 10) = 0 - Entered: 0
+You got 9 answers correct
+You got 7 answers wrong
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Brendans-MacBook-Pro.local/Users/brendan/Desktop/cprograms/2103-A3Q2-0301485t[0m[27m[24m[Jbrendan@Brendans-MacBook-Pro 2103-A3Q2-0301485t % [K[?2004heexit[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+Script done on Fri Oct 20 01:03:37 2023

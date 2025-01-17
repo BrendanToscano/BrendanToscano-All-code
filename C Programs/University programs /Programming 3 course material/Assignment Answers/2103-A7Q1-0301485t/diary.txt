@@ -1,0 +1,49 @@
+Create Struct with id, name and marks.
+
+8:09-11:38
+First we create the function read csv
+Function should open the file with error handling 
+Use strtok to get the values for every csv.
+Since there are 10 items in marks we will run till we get all of them and save it.
+For ints or decimal use Strtod and strtol.
+Forgot to add read till the end of the csv file.
+Also catch new lines at the end.
+Break out of loop once it has run more than numStudent times.
+Return the number of times ran.
+
+11:38 - 11:55
+Implementing a function to display the data of a student with their id, name and marks
+Encountered a small problem with the pointer fixed that.
+
+12:22 -12:48
+Calculate the total marks first get the midterm marks and save 20% of that.
+Then calculate the assignment marks save 80% of that split it with 8 assignments add a loop here for all 8 assignments.
+The first loop will go through each student and get the above then repeat keep track of the total
+Divide the total by the num of students.
+
+12:48 - 1:25
+Calculate the average mark of the given assignment.
+First run a loop going through all the students marks.
+Add the marks to a variable total
+Also count the number of times the we get a mark.
+Skip marks with -1 value.
+Then divide the total by the number of marks received.
+
+1:25 - 1:58
+Find the student info by the student id
+For loop to run through the students
+And check if the student id given by the user against the list student ids.
+If found return the struct that contains it.
+Else tell user data not found and return nothing.
+
+11:55 - 3:08
+Create a while loop giving user 5 option.
+Display all students, calculate class mark, calculate average mark, search student with student id or quit.
+If option a then run through all the student data with a for loop and print it out.
+If option b then print the average class mark
+If option c then ask user for classIndex and print the average of the class index assignment.
+If option d then ask the user for the student id and call the search id function if it returns null don’t print anything if it returns something print it using display student.
+If option e then quit the program successfully.
+Else quit unsuccessfully 
+
+Lot of debugging was involved it was hard to document the debugging but mostly occurred in the first part of the program readCSV. 

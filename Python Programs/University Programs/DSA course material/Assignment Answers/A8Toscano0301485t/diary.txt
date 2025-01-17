@@ -1,0 +1,99 @@
+Creating a class graph and the 4 functions in it. 4:30-4:32
+Decided to use adjacent lists.
+
+Decided to use a dictionary and a list as the value to store the directed vertex in.
+
+In add vertex we will add the empty list to the key value.
+
+In add edge we should check if vertex 1 and 2 exists if it does then we add vertex 2 to the value of vertex 1.
+Else tell the user they don’t exist.
+
+Out edges should return a list of vertex the given vertex points to so basically just the list of vertex in this case the value of the key. We should check if the vertex exists in the dictionary as well.
+
+In edges we use .items that will return a tuple the first element of the tuple is the key and the second is a list of the values.
+We check if the vertex is in the list and append that value to the list of vertices.
+
+Basic working understanding 
+Q = [1]
+1 pointed to 2,3,4 
+1st element is popped off and then 2,3,4 are added
+Q = [2,3,4]
+Then the first element is to another list called visited
+V = [1]
+We repeat this process while checking if the added value already exists in the visited list before adding to queue.
+
+Bfs 
+First we need a queue. We add the first value to it.
+We then create a loop while true
+Then in the loop we pop the item off the queue and assign it a value.
+We then create a for loop that use the outages function in graph to get the values being pointed to.
+The values are then checked against the visited list to see if they are visited if not they are added to the queue where they will be processed.
+We also add a final condition at the end to check if the queue is empty and there is nothing to be processed adding this before we pop incase it is empty from the start. Just moved it directly to the while condition check.
+Forgot to add the popped item to the visited list doing that.
+Checking to see if the value is already in the visited list before adding it .
+
+Implementing graph 1 and adding as follows 
+
+Implementing dfs
+
+graph1 = Graph()
+graph1.addVertex(1)
+graph1.addVertex(2)
+graph1.addVertex(3)
+graph1.addVertex(4)
+graph1.addVertex(5)
+graph1.addVertex(6)
+graph1.addVertex(7)
+graph1.addVertex(8)
+
+graph1.addEdge(3,1)
+graph1.addEdge(3,8)
+graph1.addEdge(6,1)
+graph1.addEdge(5,1)
+graph1.addEdge(2,2)
+graph1.addEdge(1,2)
+graph1.addEdge(2,3)
+graph1.addEdge(3,4)
+graph1.addEdge(4,5)
+graph1.addEdge(5,6)
+graph1.addEdge(6,7)
+graph1.addEdge(7,8)
+
+Testing all functions
+
+For bfs copy pasting the dfs function to it and changing pop(0) to pop() and the name queue to stack to keep the naming accurate.
+
+Testing again.
+
+Everything is working 
+
+Adding second test case 
+
+graph2 = Graph()
+graph2.addVertex(1)
+graph2.addVertex(2)
+graph2.addVertex(3)
+graph2.addVertex(4)
+graph2.addVertex(5)
+graph2.addVertex(6)
+graph2.addVertex(7)
+graph2.addVertex(8)
+
+graph2.addEdge(1,2)
+graph2.addEdge(2,3)
+graph2.addEdge(3,4)
+graph2.addEdge(4,5)
+graph2.addEdge(5,3)
+graph2.addEdge(3,6)
+graph2.addEdge(3,7)
+graph2.addEdge(3,8)
+graph2.addEdge(6,5)
+graph2.addEdge(7,6)
+graph2.addEdge(7,8)
+graph2.addEdge(2,6)
+graph2.addEdge(8,1)
+
+To implement connected components best way to go about is to call bfs or dfs on all the elements in the graph with all the starting index of the graph.
+Making sure we don’t get duplicates by checking if the item is in list before adding it.
+
+The jpegs included in folder.

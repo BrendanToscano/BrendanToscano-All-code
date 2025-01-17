@@ -1,0 +1,20 @@
+To make running this program easier, there is an executable file in the dist folder.
+Once you click on the dist folder you will be required to enter an API key. ( Over here we assume that the user has their own API key )
+Copy the key and paste it in when prompted.
+
+Need to knows:
+Everything else should work as expected. 
+-GPT might act up every now and then just keep re-clicking the submit button and it should work. (This is pretty common with 4o-mini but should be unlikely with 4o)(can be changed in the code if it absolutely refuses.)
+-If you review the python file there are some extra lines of code here and there. We kept to add extra functionality in the future.
+
+Future plans might add before presentation if possible(these features should not effect the basic use case of the program and are additional nice to have features):
+-Total time taken value at the end of the quiz
+-Score board for previous games (plan to hold at least 5) 
+-Want to add an option for choosing between multiple AIs. Add the options to choose between chatgpt, gemini and perplexity. 
+-Dynamic screen adjustment (since we are using place I think should be possible but we use grid and pack here and there so will require a redesign if we do move forward but should fix the bug issue we are having) 
+
+All these options can be implemented but we will try to get atleast 1 of them done before the presentation and final submission.
+
+Bugs we found and will try to fix.
+- The text sometimes is bigger than the box. We have 2 options here to fix it (One tell chatgpt to generate the quiz with a character limit)(Two reduce the text size problem with this is it makes it very hard to view)
+we will fix this for the final submission as we are trying to find other ways.

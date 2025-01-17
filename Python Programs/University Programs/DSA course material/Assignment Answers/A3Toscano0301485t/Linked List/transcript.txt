@@ -1,0 +1,122 @@
+Creating 3 classes Node, linked list and main
+
+In node setting the data to int and setting the position.
+
+In main setting up the base program and initializing linked list
+
+In linked list creating add(position, number), remove(position), traverse(position)
+
+In add 
+initializing node 
+Setting the data to user specified value
+Setting the position to null
+
+Setting the header by saying if( pos == 0)
+
+Else for everything else
+Setting a variable(traverse node) to the starting position.
+Creating a loop till the last position 
+Since we want to add before the node we get running the loop till the last position - 1
+	Incrementing the traverse node 
+
+Creating show() to display the list for debugging purposes
+Setting the start node to head
+
+Creating a loop to check for null position which will be at the tail
+	in loop printing the data from each 
+	then incrementing position
+
+Checking code in main by using add(0, 1) (1,2) (2,3) and show()
+Only 1 and 2 display tail isn’t shown 
+
+Going back to show() in linked list and adding a print command for the tail data
+
+Testing again 
+Working fine 
+Checking what happens if out of range value specified
+Code error
+
+Going to add() in linked list
+In second else statement 
+Creating a loop to get the number of elements in linked list
+
+Using the value returned to check if value is out of range or negative 
+	telling user position is out of range
+Putting rest of it in else
+
+Going back to main
+Testing add(1,1)
+List.show();
+
+Getting correct output for add
+Show does not know what to do for empty linked list 
+
+Going back to show() in linked list
+Checking If head is null telling user linked list is empty if is 
+Else the remaining part of the code.
+
+Going back to test 
+Works as expected
+
+Taking a break.
+Back
+
+Going to remove() in linked list
+First checking if list is empty by checking if head node is null
+	telling user liked list is empty
+Copy pasting the else part from add for getting last position of list
+Add multiple conditions
+If position == 0
+Return 0;
+Else if(portion == last portion)
+Return 0;
+Else
+Might add or remove more conditions later
+In postion == 0
+Incrementing the head to the next value
+In else 
+Copy pasting the last else statement in add statement 
+Deleting the position setting lines 
+Got the position of the node before the node wanted to be deleted 
+Setting the position of the node we got to the position of the node after the node we want deleted.
+
+
+Testing the code 
+Commenting out the else if statement
+Adding 3 number to the linked list in order 1,2,3 positions 0,1,2
+Using remove to remove position 1 
+Works
+Remove from out of range position
+Doesn’t work
+
+Forgot to add out of range position
+Going back and copy pasting from add the out of range part
+
+Adding 2 number 1,2 position 0,1
+Using remove to remove position 1
+Works
+
+Adding 1 number 1 position 0
+Using remove position 0
+Works
+Setting remove position to 2
+Works
+
+Next day
+
+Creating traverse 
+Checking to see if list is empty
+Else traversing through the list to get the last postion
+Checking to see if lastpostion is in range
+Creating a for loop to traverse till the position
+Creating a while loop  check till the tail to continue after the last acquired position in the for loop and printing it.
+
+Debugging traverse 
+Was printing the same amount of numbers for 0 and 1 and decreasing after realized I used position -1 hence changed that 
+Also in the range statement forgot to add condition to check if number is not negative && position >= 0
+Testing the code now 
+Works as expected
+
+I might have missed a few steps in the above transcription. I haven’t edited the above transcription and it is exactly what I typed while doing the code. For a proper Explanation of the code I have typed a description of the program at the top of the code. The comments explain the lines.
+
+

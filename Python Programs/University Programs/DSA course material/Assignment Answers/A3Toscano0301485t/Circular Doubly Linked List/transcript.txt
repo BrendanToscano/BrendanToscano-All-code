@@ -1,0 +1,106 @@
+Making the second part of the program
+Creating 3 java classes in another folder node, doublylinkedlist and main
+
+Keeping node same as the previous one and adding Node prev
+Going to main and setting it up.
+
+Copy pasting the linked list code to the circular doubly linked list 
+First going to add()
+
+Adding node.prev = null;
+
+In the last else
+node.prev = traverseNode
+Traversenode.prev.next = node;
+
+Going back up to the while loop and changing traverseNode != head.prev
+
+Testing infinite loop 
+
+Going to show
+Changing traversenode != head.prev
+
+Testing error
+
+Putting the code in a do loop
+And changing the while statement back to head 
+
+Testing desert work
+Error
+
+Adding a statement to check if lastposition < position
+
+Going to head to make sure it works 
+Setting an if statement to check if the head is empty
+
+Adding node.prev = node ( I actually did this later after doing the next step of else statement. This one missing missing statement took me a hour to figure out.)( Ill mention it below but just added it here)
+
+Setting the head for every other case
+Basically setting the old heads prev(pointer to tail) to new head and 
+Pointing the new node to the old head.
+
+Testing 
+Error
+
+Going to show
+Checking for head.prev which is the tail
+
+Testing 
+After lots of debugging 
+
+Adding node.prev = node
+
+Testing
+One number missing
+
+Going to show adding a separate extra print statement outside loop
+
+Testing
+Add and show work
+
+Break
+
+Going to traverse
+Setting the first while loop to check for head.prev instead of null
+Starting last position from 1
+
+Since we have to traverse from the start to the same position we are implementing a do loop
+I think the question is asking for 2 traverse loops since it says both directions so ill first do this one then copy past a second one
+I’ll call the first one traverse loop forward and second traverse loop backward. 
+
+For now continuing with traverse loop forward
+Converting the while loop to do loop
+Changing the while command to traveseNode != traversedNode_check 
+Creating a Node travesenode_check which will be equal to the travesnode before the do loop.
+For backwards I think we only need to change .next to .prev in the do loop.
+
+First testing normal traversing
+Traveling works 
+Though last position needs to be changed back to 0 
+
+Testing again 
+Now it works in range.
+
+Decided to keep traverse as traverse and for the second one change it to traverseBackward.
+
+Testing now 
+Expected exact opposite result but then realized that we are including the starting position as well ( it would have to be -1 for it to be backwards in my testing case that is 3) 
+So not an error I guess. Therefore code successful
+
+Now finally we go to remove()
+
+Changing the while statement to !=  head.prev
+Going to the else if and adding a statement set the old head pointer to the new head
+And changing the tail pointer to point to the second/new head node.
+
+Adding a statement to the last else statement to change the prev pointer to point to the node before the deleted node.
+
+Debugging 
+Works
+
+Testing all test cases
+Fails at add
+
+Creating an if statement before do
+
+Finishing the program with test cases

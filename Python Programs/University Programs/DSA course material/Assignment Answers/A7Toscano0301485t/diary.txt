@@ -1,0 +1,59 @@
+sources:
+Searched how to get ascii value in python top result said ord()
+Then searched ord()
+https://www.w3schools.com/python/ref_func_ord.asp
+
+18th November 2:02 - 2:19
+Importing sys and copy pasting file open part from previous program assignment in. Changing the names of everything and then setting file to sys.argv[1]. 
+In the open file part opening file and reading a word in using a nested for loop to read everything from each line. Using .split() to find for spaces and create a new word which is then appended to the list.
+
+Testing to see if program words and printing out list 
+
+Im using open addressing instead of separate chaining
+Planning ahead
+Since we need the index, word and word count I decided the best choice would be a list of lists. 
+If I use a list of lists I have access to each individual index and each list has a count and word. IT should look something like this
+[[‘hello’ , 1], [‘world’ , 1], [‘jump’ : 2]]
+
+We should first check if the word already exists if it does increment the count and move on to the next word.
+
+Then we Create a function that takes in the word uses the ascii values to return and index. 
+      
+We should create another function that takes in the list and the index and word and then checks if the index exist then increment once we find an empty index we should add the word to the list
+
+Adding to the planning 
+I will need to know the size of the hash table to determine the index from ascii values. So I think appending the values to a list getting that size and then using that size to create another list os empty values. The disadvantage to this method is less efficient but is a perfect balance between efficiency and memory when compared to dynamic resizing. Another problem is we might end up with multiple empty spaces. The benefits are it will make it easier to get a wide spread of indexes using the ascii value. We will never run out of space in the list to store values.
+
+Implementing above
+
+4:41 - 4:46
+Checking for errors 
+Forgot to implement the check to see I the index reached the end of the list so implement that. If it does it will reset index to 0 and continue.
+Some other small errors
+
+Took a break
+
+6:35 - 6:42 
+Implemented 2 functions 
+First function will print all data
+Second function is meant to ask the user for a word and then the word is compared to the words in the list then if the word is found we print the count else we tell the user word not found.
+
+Creating a loop to keep asking user 1 of 3 options to find the word count, print all data, or break out of the list which will end the program. If input is invalid will keep asking user.
+
+19th November 2:54 - 3:42 (I forgot to time it for each function after this point cause it was going from one function to another)(so I included the program upto this point and the final program after the steps below to compare the changes just incase)
+I plan on implementing a dynamic resizing and use a load factor of 0.8 to increase the size of the list. This should improve efficiency. Even though the cost is high I think this is the best implementation. 
+
+Rearranging stuff and putting the open file in a function called open file
+Putting any global variables in the function to avoid confusion or misuse.
+Removing the temp bucket and changing as we will be changing it and no longer need it.
+Creating a new list of size 10 that will double in size every time
+In resizing function creating a new list and then reading elements to it with the new list size.
+
+Since I made quite a few changes I’ll include the first version I made yesterday for reference.
+
+Merging the two function get index and check index into get index
+
+Since the naming structures of the functions don’t make much sense I’ll be changing that too.
+
+Using .replace for …(on Mac option + ;) ,long dash (on Mac option + shift + -) individually. I don’t really know how to exactly replace — and … any other way it I thought it should have worked with punctuations but since this was not a requirement I’ll leave it at that. The program should remove … — now.
+
